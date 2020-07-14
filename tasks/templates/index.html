@@ -1,0 +1,17 @@
+<h1>To Do</h1>
+<form action="">
+
+    {% csrf_token %}
+    {{ form.title }}
+
+
+    <input type="sumit" name="Create Task">
+    
+</form>
+
+{% for task in tasks %}
+<div>
+    <p>{{ task }}</p>
+</div>
+
+{% enfor %}
